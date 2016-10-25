@@ -1,23 +1,37 @@
-<h1><%= @garment.name.capitalize %></h1>
 
-<table>
-  <head>
-    <td>
-      Color
-    </td>
-    <td>
-      Material
-    </td>
-    <td>
-      Price
-    </td>
-    <td>
-      Cool?
-    </td>
-  </head>
-  <tbody>
-    <td>
-    <%=@garment.color%>
-    </td>
-  </tbody>
-</table>
+ <h1><%= @garment.name.capitalize %></h1>
+
+ <table>
+   <thead>
+     <td>
+       Color
+     </td>
+     <td>
+       Material
+     </td>
+     <td>
+       Price
+     </td>
+     <td>
+       Cool?
+     </td>
+   </thead>
+   <tbody>
+     <td>
+       <%= @garment.color %>
+     </td>
+     <td>
+       <%= @garment.material %>
+     </td>
+     <td>
+       $<%= @garment.price %>0
+     </td>
+     <td>
+       <% if @garment.cool %>
+         Totally!
+       <% else %>
+         Nah, bruh.
+       <% end %>
+     </td>
+   </tbody>
+ </table>
