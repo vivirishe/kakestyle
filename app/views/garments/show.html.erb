@@ -1,2 +1,23 @@
-<h1>Garments#show</h1>
-<p>Find me in app/views/garments/show.html.erb</p>
+<h1><%= @garment.name.capitalize %></h1>
+
+<table>
+  <head>
+    <td>
+      Color
+    </td>
+    <td>
+      Material
+    </td>
+    <td>
+      Price
+    </td>
+    <td>
+      Cool?
+    </td>
+  </head>
+  <tbody>
+    <td>
+    <%=@garment.color%>
+    </td>
+  </tbody>
+</table>
