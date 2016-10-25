@@ -7,7 +7,7 @@ Rails.application.routes.draw do
   get 'garments/new' => 'garments#new', as: :new_garment
   get 'garments/:id' => 'garments#show', as: :garment
   get 'garments/:id/edit' => 'garments#edit', as: :edit_garment
-  put 'garments/:id' => 'garments#update'
+  patch 'garments/:id' => 'garments#update'
   delete 'garments/:id' => 'garments#destroy'
 
   # For details on the DSL available within this file, see http://guides.rubyonrails.org/routing.html
